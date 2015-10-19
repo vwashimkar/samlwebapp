@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:Response Destination="http://localhost:8080/samlwebapp/" ID="gmefnbomgkjgfngojghdmndmdkfihmajafeakilb" InResponseTo="_23ce5d283943047ae131a29603284f17"
+                 IssueInstant="2015-10-14T10:43:23.533Z" Version="2.0" xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">wso2</saml2:Issuer>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </saml2p:Status>
+    <saml2:Assertion ID="mpfdkakhennlkiaodieobknohakfagdkfijeoohp" IssueInstant="2015-10-14T10:43:23.533Z" Version="2.0"
+                     xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">wso2</saml2:Issuer>
+        <saml2:Subject>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">admin</saml2:NameID>
+            <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml2:SubjectConfirmationData InResponseTo="_23ce5d283943047ae131a29603284f17" NotOnOrAfter="2015-10-14T10:48:23.533Z"
+                                               Recipient="http://localhost:8080/samlwebapp/"/>
+            </saml2:SubjectConfirmation>
+        </saml2:Subject>
+        <saml2:Conditions NotBefore="2015-10-14T10:43:23.533Z" NotOnOrAfter="2015-10-14T10:48:23.533Z">
+            <saml2:AudienceRestriction>
+                <saml2:Audience>http://localhost:8080/samlwebapp/</saml2:Audience>
+            </saml2:AudienceRestriction>
+        </saml2:Conditions>
+        <saml2:AuthnStatement AuthnInstant="2015-10-14T10:43:23.536Z">
+            <saml2:AuthnContext>
+                <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml2:AuthnContextClassRef>
+            </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+    </saml2:Assertion>
+</saml2p:Response>
